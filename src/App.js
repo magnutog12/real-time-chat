@@ -9,7 +9,7 @@ import { useCollectionData } from 'react-firebase-hooks/firestore';
 // check if Firebase is already initialized
 if (!firebase.apps.length) {
   firebase.initializeApp({
-    apiKey: "AIzaSyA8CJI2iBYXo90Y5XkvV3031eGw8FQQoDA",
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: "react-chat-poke.firebaseapp.com",
     projectId: "react-chat-poke",
     storageBucket: "react-chat-poke.firebasestorage.app",
